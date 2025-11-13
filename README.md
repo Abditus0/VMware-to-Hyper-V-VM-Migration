@@ -8,7 +8,7 @@ Step-by-step guide for migrating virtual machines from VMware to Microsoft Hyper
 
 ### Requirements
 
-- VMware virtual machine (VMDK) to migrate
+- VMware virtual machine to migrate
 
 - Hyper-V installed on the destination host
 
@@ -25,16 +25,6 @@ Step-by-step guide for migrating virtual machines from VMware to Microsoft Hyper
 - Avoid running conversions over network shares for faster performance
 
 - After migration, test the VM thoroughly before deploying it in production
-
-## Skills You Will Learn
-
-- VMware/Hyper-V VM management
-
-- Disk conversion (VMDK → VHDX)
-
-- Hyper-V virtual machine setup (if new)
-
-- Migration verification and troubleshooting*
 
 
 ### Migration Steps
@@ -137,6 +127,15 @@ If you run into problems after migration I can try to help. Common issues and qu
 ## How I can help
 
 If you want my assistance, contact me and I’ll try to help troubleshoot the issue. Please do not share passwords, private keys, or full BitLocker recovery keys in public posts
+
+## Skills You Learned
+- VMware/Hyper-V VM management
+
+- Disk conversion (VMDK → VHDX)
+
+- Hyper-V virtual machine setup (if new)
+
+- Migration verification and troubleshooting
 
 ## License  
 This project is licensed under the MIT License
