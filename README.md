@@ -1,4 +1,4 @@
-# VMware to Hyper-V VM Migration Guide
+# VMware to Hyper-V VM Migration
 
 ## Author: Ivaylo Atanassov
 
