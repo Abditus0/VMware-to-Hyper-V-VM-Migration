@@ -1,7 +1,5 @@
 # VMware to Hyper-V VM Migration
 
-## Author: Ivaylo Atanassov
-
 ### Description
 
 Step-by-step guide for migrating virtual machines from VMware to Microsoft Hyper-V using StarWind V2V Converter. This guide covers disk conversion, verification, and importing the VM into Hyper-V. Ideal for IT professionals and system administrators who need a smooth, reliable migration process.
