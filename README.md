@@ -63,10 +63,12 @@ Step-by-step guide for migrating virtual machines from VMware to Microsoft Hyper
 
 - Connect the VM to an existing Virtual Switch if available
 
-- Choose "Use an existing virtual hard disk" and navigate to the new VHDX file that you created via StarWind V2V Converter     <img width="701" height="522" alt="514050767-e21b289b-6169-408b-baae-1c9e291636da" src="https://github.com/user-attachments/assets/6c6a11f6-7dc8-41ea-9521-f5049d807f8d" />  
+- Choose "Use an existing virtual hard disk" and navigate to the new VHDX file that you created via StarWind V2V Converter  
+
+<img width="701" height="522" alt="514050767-e21b289b-6169-408b-baae-1c9e291636da" src="https://github.com/user-attachments/assets/6c6a11f6-7dc8-41ea-9521-f5049d807f8d" />  
 
 
-  <img width="751" height="203" alt="514052057-40010459-82d3-4fbf-b80c-24447fd69c24" src="https://github.com/user-attachments/assets/1b277b6c-0be7-4a58-934d-99bd36a5e609" />  
+<img width="751" height="203" alt="514052057-40010459-82d3-4fbf-b80c-24447fd69c24" src="https://github.com/user-attachments/assets/1b277b6c-0be7-4a58-934d-99bd36a5e609" />  
 
 
 ### Step 3: Start and Verify the Migrated VM
