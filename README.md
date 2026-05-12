@@ -66,11 +66,11 @@ The trick I learned the hard way is to attach the converted VHDX to a brand new 
 
 ## What I learned
 
-The biggest one is that hypervisor migration is not really a "disk migration". It's a "machine identity change", and Windows treats it like new hardware. Everything that's tied to the hardware fingerprint (BitLocker, TPM-backed PINs, hardware-locked licenses, Windows Hello) has to be dealt with on the other side. Once you understand that, most migration problems make sense.
+The biggest one is that hypervisor migration is not really a "disk migration". It's a "machine identity change", and Windows treats it like new hardware. Everything that's tied to the hardware fingerprint (BitLocker, TPM-backed PINs, hardware-locked licenses, Windows Hello) has to be dealt with on the other side.
 
 Other things:
 
-- Always have the BitLocker recovery key in hand before starting. If you don't have it, get it from the user's Microsoft account or Azure AD before you touch the disk.
+- Always have the BitLocker recovery key in hand before starting (If any). If you don't have it, get it from the user's Microsoft account or Azure AD before you touch the disk.
 - Generation 2 / UEFI is the default for anything modern. Don't pick Generation 1 just because it boots faster.
 - Don't run conversions over network shares. Local disk to local disk every time.
 - Take a backup of the original VMware VM before doing anything. If the migration fails, you want to go back to a known good state, not a half-converted disk.
@@ -79,4 +79,3 @@ Other things:
 
 I needed to migrate a VM and the existing guides got me 80% of the way there. The last 20% (BitLocker, PIN reset, the Generation 2 boot issues) was a rabbit hole I had to figure out on my own. Once I had it working, I wrote it down so the next migration takes 30 minutes instead of half a day.
 
-Now this is my reference for any VMware to Hyper-V move. If someone else uses it and skips the same dead ends I hit, even better.
