@@ -56,7 +56,7 @@ The VM is running but it's not done.
 
 **BitLocker locking the drive after migration.** This is the big one. When a Windows machine moves between hypervisors, the hardware fingerprint changes (different motherboard, different TPM, different firmware). BitLocker sees a hardware change and locks the drive on next boot. If you don't have the recovery key, you're done. The drive is encrypted and there's no way back.
 
-The trick I learned the hard way is to attach the converted VHDX to a brand new Hyper-V VM, not an existing one. Reusing an existing VM keeps old hardware definitions around that confuse the boot process and trigger BitLocker about 90% of the time. A fresh VM with the converted disk as its first and only disk avoids the trigger far more often. Not always, but enough that this should be the default approach. Always have the BitLocker recovery key ready before you start, just in case.
+The trick I learned the hard way is to attach the converted VHDX to a brand new Hyper-V VM, not an existing one. Reusing an existing VM keeps old hardware definitions around that confuse the boot process and trigger BitLocker about 90% of the time. A fresh VM with the converted disk as its first and only disk avoids the trigger far more often. Not always, but enough that this should be the default approach.
 
 **Microsoft account PIN stops working after boot.** First boot after migration and the PIN won't work. The PIN is tied to the TPM, and the TPM in the new VM is different from the old one. The fix is to sign in with the Microsoft account password (not the PIN), then go to Settings → Accounts → Sign-in options and set up a new PIN against the new TPM. If you can't sign in at all, boot into Safe Mode or use another admin account.
 
