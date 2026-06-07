@@ -1,6 +1,6 @@
 # VMware to Hyper-V VM Migration
 
-A working method for moving a VM from VMware to Hyper-V, including the BitLocker workaround that gets you past the part that breaks most migration guides. Convert the VMDK to a VHDX with StarWind V2V Converter, create a fresh Hyper-V VM, attach the new disk, boot it, and deal with the post-migration cleanup.
+A method for migrating a VM from VMware to Hyper-V, including the BitLocker workaround that gets you past the part that breaks most migration guides. Convert the VMDK to a VHDX with StarWind V2V Converter, create a fresh Hyper-V VM, attach the new disk, boot it, and deal with the post-migration cleanup.
 
 The reason this is worth writing down is that 90% of guides stop at "import the disk and start the VM". The actual problem is what happens after that. BitLocker triggers because the hardware fingerprint changed. The Microsoft PIN stops working. Drivers are missing. The system reserved partition didn't come over cleanly. None of that gets covered. This does.
 
